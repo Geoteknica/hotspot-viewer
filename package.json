@@ -1,0 +1,22 @@
+{
+  "name": "hotspotanalysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "georaster": "^1.6.0",
+    "georaster-layer-for-leaflet": "^4.1.2",
+    "leaflet": "^1.9.4",
+    "proj4": "^2.20.2",
+    "vite": "^7.3.1"
+  }
+}

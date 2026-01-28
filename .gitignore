@@ -1,0 +1,12 @@
+node_modules
+dist
+*.log
+.DS_Store
+input_rasters/
+output_cogs/
+public/data/*.tif
+public/data/*_web.tif
+temp_*.tif
+temp_*
+*.pyc
+__pycache__

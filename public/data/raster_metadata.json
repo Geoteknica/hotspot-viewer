@@ -1,0 +1,145 @@
+{
+  "CDTs": {
+    "bounds": [
+      [
+        17.9468848,
+        -67.271289
+      ],
+      [
+        18.5024394,
+        -65.283081
+      ]
+    ],
+    "file": "CDTs.png"
+  },
+  "Centros_330": {
+    "bounds": [
+      [
+        17.9455013,
+        -67.2716007
+      ],
+      [
+        18.5065896,
+        -65.2792737
+      ]
+    ],
+    "file": "Centros_330.png"
+  },
+  "Centros_dialisis": {
+    "bounds": [
+      [
+        17.9547278,
+        -67.1871192
+      ],
+      [
+        18.4926095,
+        -65.4216335
+      ]
+    ],
+    "file": "Centros_dialisis.png"
+  },
+  "Centros_imagenes": {
+    "bounds": [
+      [
+        17.9450589,
+        -67.1697987
+      ],
+      [
+        18.5064363,
+        -65.6314425
+      ]
+    ],
+    "file": "Centros_imagenes.png"
+  },
+  "Centros_terminacion_embarazo": {
+    "bounds": [
+      [
+        18.3643499,
+        -66.1640637
+      ],
+      [
+        18.416891,
+        -65.9677653
+      ]
+    ],
+    "file": "Centros_terminacion_embarazo.png"
+  },
+  "Cirugia_ambulatoria": {
+    "bounds": [
+      [
+        17.9723921,
+        -67.1777267
+      ],
+      [
+        18.4906378,
+        -65.9247909
+      ]
+    ],
+    "file": "Cirugia_ambulatoria.png"
+  },
+  "Farmacias": {
+    "bounds": [
+      [
+        17.9367022,
+        -67.2698467
+      ],
+      [
+        18.5244727,
+        -65.6276631
+      ]
+    ],
+    "file": "Farmacias.png"
+  },
+  "Hospitales": {
+    "bounds": [
+      [
+        17.9540717,
+        -67.173004
+      ],
+      [
+        18.4915457,
+        -65.6302824
+      ]
+    ],
+    "file": "Hospitales.png"
+  },
+  "Lab_clinicos": {
+    "bounds": [
+      [
+        17.942235,
+        -67.271993
+      ],
+      [
+        18.519787,
+        -65.2827309
+      ]
+    ],
+    "file": "Lab_clinicos.png"
+  },
+  "oficinasmedicas": {
+    "bounds": [
+      [
+        17.8812407,
+        -67.9513738
+      ],
+      [
+        18.5159687,
+        -65.2209829
+      ]
+    ],
+    "file": "oficinasmedicas.png"
+  },
+  "Salas_urgencia": {
+    "bounds": [
+      [
+        18.0305726,
+        -66.7402875
+      ],
+      [
+        18.4457616,
+        -65.8610421
+      ]
+    ],
+    "file": "Salas_urgencia.png"
+  }
+}

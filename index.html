@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puerto Rico Hotspot Analysis Viewer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+      <div id="welcome-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🗺️ Análisis de Concentración de Instalaciones de Salud en Puerto Rico</h2>
+            </div>
+            
+            <div class="modal-body">
+                <h3>¿Qué es un análisis de concentración (Hotspot)?</h3>
+                <p>
+                    El análisis de concentración es un método estadístico espacial que identifica áreas con 
+                    agrupamientos estadísticamente significativos de instalaciones. En esta aplicación,
+                revelan patrones geográficos en la distribución de instalaciones de salud 
+                    a través de Puerto Rico.
+                </p>
+                
+                <h3>Cómo interpretar este análisis</h3>
+                <p>
+                    <strong>Las áreas de alta intensidad (colores rojos/oscuros)</strong> indican regiones con 
+                    una alta concentración de instalaciones de salud, mientras que <strong>las áreas de baja 
+                    intensidad (colores claros)</strong> muestran regiones con menos instalaciones.
+                </p>
+                      
+                <h3>Consideraciones importantes</h3>
+                <div class="caveat-box">
+                    <p><strong>⚠️ Algunas salvedades:</strong></p>
+                    <ul>
+                        <li><strong>Análisis estadístico:</strong> El análisis de concentración representa patrones de 
+                        agrupamiento espacial, no necesariamente la calidad o capacidad del servicio</li>
+                        <li><strong>Actualidad de datos:</strong> El análisis refleja las ubicaciones de las 
+                        instalaciones al momento de la recopilación de datos y puede no incluir cambios recientes</li>
+                        <li><strong>Fuente de datos:</strong> Alguna de esta información proviene de Google Maps, 
+                            la capa pasó por una revisión de calidad, no obstante recomendamos verificar los datos en campo para decisiones críticas.</li>
+                        <li><strong>Múltiples factores:</strong> La accesibilidad depende de muchos factores más 
+                        allá de la distribución espacial (transporte, horarios de operación, especialidades, capacidad)</li>
+                        <li><strong>Herramienta de Planificación:</strong> Este análisis debe usarse junto con otras 
+                        fuentes de datos para una planificación integral de la atención médica</li>
+                    </ul>
+                </div>
+                
+                <h3>Cómo usar esta herramienta</h3>
+                <p>
+                    Use los controles a la derecha para seleccionar diferentes tipos de instalaciones, ajustar 
+                    la opacidad de la capa y cambiar el mapa base. Haga clic y arrastre para desplazarse, use 
+                    la rueda del mouse para hacer zoom, y consulte la leyenda para entender los niveles de intensidad.
+                </p>
+            </div>
+            
+            <div class="modal-footer">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="dont-show-again">
+                    No mostrar esto de nuevo
+                </label>
+                <button id="close-modal" class="btn-primary">Comenzar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <!-- Company Logo -->
+    <div id="company-logo">
+        <img src="/Logo-ETI.png" alt="Company Logo">
+        <div class="company-name">Estudios Técnicos, Inc.</div>
+    </div>
+    
+    <div id="controls">
+     <div id="controls">
+        <h3>🗺️ Visor de Concentración</h3>
+        
+        <button id="show-info" class="btn-info">ℹ️ Acerca de este análisis</button>
+        
+        <div class="control-section">
+            <label for="layer-selector"><strong>Capa de Análisis:</strong></label>
+            <select id="layer-selector">
+                <option value="">Cargando...</option>
+            </select>
+        </div>
+        
+        <div id="layer-info" class="info-box">
+            <small>Cargando...</small>
+        </div>
+        
+        <div class="control-section">
+            <label for="base-layer"><strong>Mapa Base:</strong></label>
+            <select id="base-layer">
+                <option value="streets">Calles</option>
+                <option value="satellite">Satélite</option>
+                <option value="dark">Oscuro</option>
+            </select>
+        </div>
+        
+        <div class="control-section">
+            <label for="opacity-slider"><strong>Opacidad:</strong> <span id="opacity-value">70%</span></label>
+            <input type="range" id="opacity-slider" min="0" max="100" value="70">
+        </div>
+        
+        <div class="control-section">
+            <button id="toggleLayer" class="btn">Ocultar Capa</button>
+        </div>
+    </div>
+    
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Cargando datos de concentración...</p>
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
